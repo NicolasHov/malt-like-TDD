@@ -1,7 +1,9 @@
 import FreelanceCard from './components/FreelanceCard/FreelanceCard';
 import './App.css';
-import {freelances} from './fixtures'
+import {freelances} from './fixture'
 
+// Projet inspiré de https://github.com/Aebrathia/moult (conf de Malt.io) - NB: voir branche 'result'
+// Pour contact, essayer https://twitter.com/aebrathia
 function App() {
   return (
     <div className="App">

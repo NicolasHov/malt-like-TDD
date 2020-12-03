@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react'
 import FreelanceCard from './FreelanceCard'
-import {freelances} from '../../fixtures'
+import {freelances} from '../../fixture'
 
 it('display all freelances', () => {
   render(<FreelanceCard  freelance={freelances[0]}/>);
@@ -11,8 +11,7 @@ it('display all freelances', () => {
 });
 
 it('display "indispo" when freelance unavailable', () => {
-    render(<FreelanceCard  freelance={freelances[1]}/>);
+  render(<FreelanceCard  freelance={freelances[1]}/>);
 
-    expect(screen.getByText('Indisponible')).toBeInTheDocument();
-  
+  expect(screen.getByText('Indisponible')).toBeInTheDocument();
 });

@@ -1,17 +1,17 @@
 import React from 'react'
-import {freelances} from './fixtures'
+import {freelances} from '../../fixture'
 
-const FreelanceCard = ({freelances}) => {
+const FreelanceCard = () => {
     return (
-        <div>
+        <main>
             {freelances.map((freelance) => (
-                <article>
+                <div key={freelance.id}>
                     <h2>{freelance.name}</h2>
                     <p>{freelance.title}</p>
                     <p>{freelance.available ? 'Disponible' : 'Indisponible'}</p>
-                </article>
+                </div>
             ))}
-        </div>
+        </main>
     )
 }
 
