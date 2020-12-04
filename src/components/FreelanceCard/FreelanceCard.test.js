@@ -6,7 +6,7 @@ it('display all freelances', () => {
   render(<FreelanceCard  freelance={freelances[0]}/>);
 
   expect(screen.getByText('Antonio Ribeiro')).toBeInTheDocument();
-  expect(screen.getByText('Développeur Web')).toBeInTheDocument();
+  expect(screen.getByText('Développeur web')).toBeInTheDocument();
   expect(screen.getByText('Disponible')).toBeInTheDocument();
 });
 
